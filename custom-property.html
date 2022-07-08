@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color: cyan;
+            --main-boder: 2px solid red;
+        }
+        h1 {
+            color: var(--main-color);
+        }
+
+        h2 {
+            color: var(--main-color);
+        }
+        
+        h4{
+            color: var(--main-color);
+        }
+
+        h3{
+            color: var(--main-color);
+            border: var(--main-boder);
+        }
+        p {
+            color: var(--main-color);
+        }
+
+        .side-nav, .blogs {
+            float: left;
+            height: 200px;
+        }
+
+        .side-nav{
+            background-color: red;
+            width: 200px;
+        }
+
+        .blogs{
+            background-color: azure;
+            width: calc(100% - 2*(200px));
+        }
+
+        footer{
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quisquam molestiae ut reprehenderit
+            expedita sapiente, dicta placeat esse itaque numquam consequatur sit illum magnam et quia ipsa asperiores
+            ipsam vitae?</p>
+    </header>
+    <main>
+        <section>
+            <aside class="side-nav">
+                <h4>Side nav</h4>
+            </aside>
+
+            <div class="blogs">
+                <h4>Blogs</h4>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <h3>THis tis footer</h3>
+    </footer>
+</body>
+
+</html>
